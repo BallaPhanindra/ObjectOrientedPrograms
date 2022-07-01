@@ -15,7 +15,7 @@ namespace ObjectOrientedPrograms
             switch (number)
             {
                 case 0:
-                    InventoryManagement.DiverMethod();
+                    AccountManagement.DriverMethod();
                     break;
                 default:
                     Console.WriteLine("Invalid Entry");
