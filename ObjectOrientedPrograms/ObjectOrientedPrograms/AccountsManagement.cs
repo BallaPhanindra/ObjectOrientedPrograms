@@ -39,18 +39,18 @@ namespace ObjectOrientedPrograms
         {
             string jfile = File.ReadAllText(path);
 
-            List<Accounts> ls;
+            List<StockAccount> ls;
             if (jfile.Length < 1)
             {
-                ls = new List<Accounts>();
+                ls = new List<StockAccount>();
             }
             else
             {
-                ls = JsonConvert.DeserializeObject<List<Accounts>>(jfile);
+                ls = JsonConvert.DeserializeObject<List<StockAccount>>(jfile);
             }
 
             Console.WriteLine("enter the Name: ");
-            Accounts ac = new Accounts();
+            StockAccount ac = new StockAccount();
             ac.Fill(Console.ReadLine());
 
             ls.Add(ac);
@@ -72,14 +72,14 @@ namespace ObjectOrientedPrograms
         {
             string jfile = File.ReadAllText(path);
 
-            List<Accounts> ls;
+            List<StockAccount> ls;
             if (jfile.Length < 1)
             {
-                ls = new List<Accounts>();
+                ls = new List<StockAccount>();
             }
             else
             {
-                ls = JsonConvert.DeserializeObject<List<Accounts>>(jfile);
+                ls = JsonConvert.DeserializeObject<List<StockAccount>>(jfile);
             }
             for (int i = 0; i < ls.Count; i++)
             {
@@ -101,14 +101,14 @@ namespace ObjectOrientedPrograms
         {
             string jfile = File.ReadAllText(path);
 
-            List<Accounts> ls;
+            List<StockAccount> ls;
             if (jfile.Length < 1)
             {
-                ls = new List<Accounts>();
+                ls = new List<StockAccount>();
             }
             else
             {
-                ls = JsonConvert.DeserializeObject<List<Accounts>>(jfile);
+                ls = JsonConvert.DeserializeObject<List<StockAccount>>(jfile);
             }
 
             for (int i = 0; i < ls.Count; i++)
