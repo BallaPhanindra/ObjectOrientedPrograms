@@ -1,30 +1,25 @@
-﻿    using System;
-    using System.IO;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Linq;
+﻿using System;
+using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ObjectOrientedPrograms
-{ 
+{
     public class Program
     {
-
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1 for AddressBook\n" +
-                "Enter 2 for InventoryManagement\n" +
-                "Enter 3 for Stock Management\n" +"Enter 4 for Commercial Data Processing \n"
-                );
+            Console.WriteLine("Enter 0 for InventoryManagement\n");
             int number = int.Parse(Console.ReadLine());
 
             switch (number)
             {
-                    case 4:
-                    AccountManagement.DriverMethod();
+                case 0:
+                    InventoryManagement.DiverMethod();
                     break;
-                    default:
+                default:
                     Console.WriteLine("Invalid Entry");
                     break;
-                
             }
         }
     }
